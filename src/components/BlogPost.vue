@@ -1,7 +1,7 @@
 <template>
   <q-card inline>
     <q-card-media>
-      <img :src="`assets/blog/` + post.imgSrc" style="float:left;height:15vw;object-fit:cover;">
+      <img :src="`assets/blog/` + post.imgsrc" style="float:left;height:15vw;object-fit:cover;">
     </q-card-media>
     <q-card-title class="relative-position">
       <div class="q-title">{{post.title}}</div>

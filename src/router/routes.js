@@ -8,6 +8,13 @@ const routes = [
     ]
   },
   {
+    path: '/blog/',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [
+      { path: ':id', component: () => import('pages/BlogPostDetail.vue'), props: true }
+    ]
+  },
+  {
     path: '/lesson',
     component: () => import('layouts/MyLayout.vue'),
     children: [
